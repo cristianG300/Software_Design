@@ -1,0 +1,20 @@
+<div class="container">
+    <img [src]="item.imageUrl" [alt]="item.title" />
+    <div class="details">
+        <div class="header">
+            <span class="title">
+                {{item.title}}
+            </span>
+        </div>
+        <div class="price">
+            {{item.price|currency:'€'}}
+        </div>
+        <div class="category">
+            {{item.category}}
+        </div>
+        <div class="size">
+            {{item.size}}
+        </div>
+        <button (click)="addToCart()">Add To Cart</button>
+    </div>
+</div>

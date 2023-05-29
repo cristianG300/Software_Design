@@ -1,0 +1,21 @@
+<ul>
+    <li *ngFor="let item of items">
+        <a routerLink="/item/{{item.id}}">
+            <img src="{{item.imageUrl}}" alt="">
+            <div class="content">
+                <div class="title">
+                    {{item.title}}
+                </div>
+                <div class="price">
+                    {{item.price|currency:'€'}}
+                </div>
+                <div class="category">
+                    {{item.category}}
+                </div>
+                <div class="size">
+                    {{item.size}}
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
